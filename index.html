@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fav Home</title>
+    <script src="https://kit.fontawesome.com/4e860c3dd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <h2 class="logo">MFL</h2>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle" class="fas fa-angle-down"></i></button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#">Songs</a>
+                                <a href="#">Videos</a>
+                                <a href="#">Games</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Signin/Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header / Starting of main Body -->
+    <div class="mainBody">
+
+    </div>
+    <!-- End of main Body / Starting of Footer -->
+    <footer>
+        <div class="footerPart1">
+            <div class="darkModeDiv">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="sliderRound" onclick="darkMode()"></span>
+                </label>
+                <span id="darkModeText">Dark Mode</span>
+            </div>
+            <div class="iconsToFollow">
+                <span id="followText">Follow us on : </span>
+                <span class="icons">
+                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-reddit"></i>
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </div>
+        </div>
+        <div class="breakLine"><hr></div>
+        <div class="footerPart2">
+            <div class="copyRight">
+                <p>All Rights Reserved &#169; K95 2022 | v0.01</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
