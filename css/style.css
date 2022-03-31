@@ -109,7 +109,7 @@ body {
 .darkModeDiv {
     display: flex;
 }
-
+/* Dar Mode Switch css */
 .switch {
     position: relative;
     display: inline-block;
@@ -214,17 +214,72 @@ input:checked+.sliderRound:before {
     color: white;
 }
 
+/* Footer part 3 css */
+.footerPart3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    color: white;
+    
+}
+.box1{
+    margin: 1px 3vw ;
+}
+.box1 h3{
+    margin-bottom: 6px;
+}
+.box1 ul{
+    padding: 0;
+}
+.box1 ul li{
+    list-style-type: none;
+}
+
+
+
 /* MainBody Css */
 .mainBody {
-    height: 80vh;
+    height: 71vh;
+    /* margin-bottom: 100vh; */
 }
 .cont1{
-    margin: 20px 15px;
+    margin: 40px 15px;
 }
-.cont1 h1{
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heading h1{
     font-size: 60px;
 }
-.cont1 p{
+.catList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.catList a{
+    color: white;
+    text-decoration: none;
+}
+.linkBtn{
+    height: 200px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgb(212, 161, 212) , rgb(77, 0, 128));
+}
+.linkBtn h3{
     font-size: 30px;
-    /* color: #000; */
+}
+.linkBtn p{
+    font-size: 20px;
 }
