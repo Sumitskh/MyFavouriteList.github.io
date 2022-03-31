@@ -96,10 +96,6 @@ body {
     display: block;
 }
 
-/* MainBody Css */
-.mainBody {
-    height: calc(85vh);
-}
 
 /* Footer Css */
 
@@ -172,6 +168,7 @@ input:checked+.sliderRound:before {
 .dark-mode {
     background-color: #000;
     background-image: none;
+    color: #fff;
 }
 
 #darkModeText {
@@ -179,7 +176,7 @@ input:checked+.sliderRound:before {
     margin: 10px 0px;
     display: inline-block;
 }
-
+/* Dark Mode css END */
 .iconsToFollow {
     display: flex;
     justify-content: center;
@@ -215,4 +212,19 @@ input:checked+.sliderRound:before {
 
 .copyRight p {
     color: white;
+}
+
+/* MainBody Css */
+.mainBody {
+    height: 80vh;
+}
+.cont1{
+    margin: 20px 15px;
+}
+.cont1 h1{
+    font-size: 60px;
+}
+.cont1 p{
+    font-size: 30px;
+    /* color: #000; */
 }
