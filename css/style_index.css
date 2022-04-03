@@ -1,0 +1,141 @@
+
+
+/***************************** MainBody Css *****************************************/
+.mainBody {
+    /* height: 150vh; */
+    padding: 80px 0 0 0;
+}
+.cont1{
+    margin: 40px 15px;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heading h1{
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+}
+.catList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.catList a{
+    color: white;
+    text-decoration: none;
+    font-family: 'BIZ UDMincho', serif;
+}
+.linkBtn{
+    height: 200px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgb(212, 161, 212) , rgb(77, 0, 128));
+    transition: 0.5s ease;
+}
+.linkBtn h3{
+    font-size: 30px;
+}
+.linkBtn p{
+    font-size: 20px;
+}
+.linkBtn:hover{
+    transform: translateY(-10px);
+}
+/********************************* Image slider css */
+
+.imgSlideshow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.slider{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 1000px;
+    height: 500px;
+}
+/* css for manual navigation */
+.navigation-manual{
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+/* css for automatic navigtion */
+
+.navigation-auto{
+    position: absolute;
+    width: 1000px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}

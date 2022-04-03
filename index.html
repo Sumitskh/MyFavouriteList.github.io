@@ -7,6 +7,7 @@
     <title>Fav Home</title>
     <script src="https://kit.fontawesome.com/4e860c3dd1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_index.css">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
                     <li><a href="#">Home</a></li>
                     <li>
                         <div class="dropdown">
-                            <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle" class="fas fa-angle-down"></i></button>
+                            <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle"
+                                    class="fas fa-angle-down"></i></button>
                             <div class="dropdown-content" id="myDropdown">
                                 <a href="#">Songs</a>
                                 <a href="#">Anime</a>
@@ -30,30 +32,80 @@
                     <li><a href="#">Signin/Signup</a></li>
                 </ul>
             </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
         </nav>
     </header>
     <!-- End of header / Starting of main Body -->
     <div class="mainBody">
+        <!-- image slider start -->
+        <div class="imgSlideshow">
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio buttons starts -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- radio buttons ends -->
+                    <!-- slide images start -->
+                    <div class="slide first">
+                        <img
+                            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                    </div>
+                    <!-- slide images end -->
+                    <!-- Automatic navigation start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- Automatic navigation end -->
+                </div>
+                <!-- Manual navigation start -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <!-- Manual navigation end -->
+            </div>
+            <!-- image slider end -->
+        </div>
+        <div class="breakLine">
+            <hr>
+        </div>
         <div class="cont1">
             <div class="heading">
-                <h1>Categories</h1>
+                <h1>CHOICES</h1>
             </div>
             <div class="catList">
-               <a href="songs..html"><div class="linkBtn">
-                    <h3>Songs</h3>
-                    <p>Music is here...</p>
-                </div>
-            </a> 
-               <a href="anime.html"><div class="linkBtn">
-                    <h3>Anime</h3>
-                    <p>Anime is here...</p>
-                </div>
-            </a> 
-               <a href="games.html"><div class="linkBtn">
-                    <h3>Games</h3>
-                    <p>Games is here...</p>
-                </div>
-            </a> 
+                <a href="songs..html">
+                    <div class="linkBtn">
+                        <h3>Songs</h3>
+                        <p>Music is here...</p>
+                    </div>
+                </a>
+                <a href="anime.html">
+                    <div class="linkBtn">
+                        <h3>Anime</h3>
+                        <p>Anime is here...</p>
+                    </div>
+                </a>
+                <a href="games.html">
+                    <div class="linkBtn">
+                        <h3>Games</h3>
+                        <p>Games is here...</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -78,39 +130,17 @@
                 </span>
             </div>
         </div>
-        <div class="footerPart3">
-            <div class="topCategoriesBox box1">
-                <h3>Top Categories</h3>
-                <ul>
-                    <li>Songs</li>
-                    <li>Anime</li>
-                    <li>Games</li>
-                </ul>
-            </div>
-            <div class="aboutBox box1">
-                <h3>About</h3>
-                <ul>
-                    <li>Term & Condition</li>
-                    <li>Privacy police</li>
-                    <li>About us</li>
-                </ul>
-            </div>
-            <div class="helpAndFeedbackBox box1">
-                <h3>Help | Feedback</h3>
-                <ul>
-                    <li>Contact us</li>
-                    <li>Leave a Feedback</li>
-                </ul>
-            </div>
+        <div class="breakLine">
+            <hr>
         </div>
-        <div class="breakLine"><hr></div>
         <div class="footerPart2">
             <div class="copyRight">
-                <p>All Rights Reserved &#169; K95 2022 | v0.01</p>
+                <p>All Rights Reserved &#169; K95 2022 | v0.05</p>
             </div>
         </div>
     </footer>
     <script src="script/script.js"></script>
+    <script src="script/script_index.js"></script>
 </body>
 
 </html>

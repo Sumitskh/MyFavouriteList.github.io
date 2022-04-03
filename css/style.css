@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Red+Hat+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Bebas+Neue&family=Hurricane&family=Red+Hat+Mono&display=swap');
 
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'BIZ UDMincho', serif;
+font-family: 'Hurricane', cursive;
+font-family: 'Red Hat Mono', monospace; */
 
 * {
     margin: 0;
@@ -11,7 +15,12 @@ body {
     background-color: #f7f7f2;
     /* background-image: linear-gradient(to bottom right, rgb(212, 161, 212) , rgb(77, 0, 128)); */
 }
-
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
 .navbar {
     background-color: #212121;
     display: flex;
@@ -53,7 +62,7 @@ body {
     background-color: #fff;
 }
 
-/* DropDown */
+/*********************** DropDown */
 .dropdown .dropbtn {
     cursor: pointer;
     font-size: 16px;
@@ -95,9 +104,21 @@ body {
 .show {
     display: block;
 }
+/* Progress bar css */
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: rgb(255, 0, 0);
+    width: 0%;
+  }
+  
 
-
-/* Footer Css */
+/*------------------------------------------ Footer Css -------------------------------------*/
 
 .footerPart1 {
     /* background-color: #fff; */
@@ -236,50 +257,3 @@ input:checked+.sliderRound:before {
     list-style-type: none;
 }
 
-
-
-/* MainBody Css */
-.mainBody {
-    height: 71vh;
-    /* margin-bottom: 100vh; */
-}
-.cont1{
-    margin: 40px 15px;
-}
-.heading{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.heading h1{
-    font-size: 60px;
-}
-.catList{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-.catList a{
-    color: white;
-    text-decoration: none;
-}
-.linkBtn{
-    height: 200px;
-    width: 250px;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    cursor: pointer;
-    background-image: linear-gradient(to bottom right, rgb(212, 161, 212) , rgb(77, 0, 128));
-}
-.linkBtn h3{
-    font-size: 30px;
-}
-.linkBtn p{
-    font-size: 20px;
-}
