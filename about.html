@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4e860c3dd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_about.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+            <nav class="navbar">
+                <h2 class="logo">MFL</h2>
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle"
+                                    class="fas fa-angle-down"></i></button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#">Songs</a>
+                                <a href="#">Anime</a>
+                                <a href="#">Games</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Signin/Signup</a></li>
+                </ul>
+            </nav>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
+    </header>
+    <div class="main-body">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A explicabo omnis, odit consequatur, voluptatum laboriosam, amet dolore adipisci nam libero sequi inventore. Iste voluptatem tempore sapiente ab a doloremque vero nulla eius impedit in! Praesentium accusamus amet, magnam corporis quod iste minima magni ex itaque cumque repellendus commodi velit soluta suscipit facere illum molestiae, possimus deserunt ducimus voluptates in. Cumque in numquam cum aut, pariatur fugiat facere illum sapiente molestiae aliquam, ipsa officia necessitatibus nihil aperiam temporibus voluptates est enim voluptatum corrupti. Cum ratione accusantium architecto quasi maiores! Quae earum, necessitatibus quasi repellendus quis eligendi? Repudiandae autem ullam iste dolores quidem vel fugiat ipsa, veniam possimus consequatur maiores odio, quam temporibus esse accusamus et numquam qui ducimus, sed perferendis magnam assumenda provident architecto ratione? Aut fugiat qui ducimus nobis eligendi! Maxime esse voluptatem vel doloremque labore mollitia tempore aliquam nulla quod commodi earum aliquid nesciunt, molestiae laborum tenetur iste enim, optio similique placeat! Neque labore reprehenderit deserunt omnis consequatur, rem exercitationem temporibus quasi officiis non saepe voluptatibus illo quis doloribus?</p>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footerPart1">
+            <div class="darkModeDiv">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="sliderRound" onclick="darkMode()"></span>
+                </label>
+                <span id="darkModeText">Dark Mode</span>
+            </div>
+            <div class="iconsToFollow">
+                <span id="followText">Follow us on : </span>
+                <span class="icons">
+                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-reddit"></i>
+                    <i class="fab fa-twitter"></i>
+                </span>
+            </div>
+        </div>
+        <div class="breakLine">
+            <hr>
+        </div>
+        <div class="footerPart2">
+            <div class="copyRight">
+                <p>All Rights Reserved &#169; K95 2022 | v0.05</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
