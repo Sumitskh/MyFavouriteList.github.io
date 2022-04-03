@@ -12,30 +12,28 @@
 
 <body>
     <header>
-        <nav>
-            <div class="navbar">
-                <h2 class="logo">MFL</h2>
-                <ul class="list">
-                    <li><a href="#">Home</a></li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle"
-                                    class="fas fa-angle-down"></i></button>
-                            <div class="dropdown-content" id="myDropdown">
-                                <a href="#">Songs</a>
-                                <a href="#">Anime</a>
-                                <a href="#">Games</a>
-                            </div>
+        <nav class="navbar">
+            <h2 class="logo">MFL</h2>
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle"
+                                class="fas fa-angle-down"></i></button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="#">Songs</a>
+                            <a href="#">Anime</a>
+                            <a href="#">Games</a>
                         </div>
-                    </li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Signin/Signup</a></li>
-                </ul>
-            </div>
-            <div class="progress-container">
-                <div class="progress-bar" id="myBar"></div>
-            </div>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Signin/Signup</a></li>
+            </ul>
         </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
     </header>
     <!-- End of header / Starting of main Body -->
     <div class="mainBody">
@@ -55,7 +53,7 @@
                     </div>
                     <div class="slide">
                         <img
-                            src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                            src="https://assets-prd.ignimgs.com/2019/12/31/bestofthedecade-anime-thumb-1577825908934.jpg">
                     </div>
                     <div class="slide">
                         <img
@@ -112,6 +110,7 @@
     <!-- End of main Body / Starting of Footer -->
     <footer>
         <div class="footerPart1">
+            <!-- dark Mode start -->
             <div class="darkModeDiv">
                 <label class="switch">
                     <input type="checkbox">
@@ -119,6 +118,7 @@
                 </label>
                 <span id="darkModeText">Dark Mode</span>
             </div>
+            <!-- dark Mode End -->
             <div class="iconsToFollow">
                 <span id="followText">Follow us on : </span>
                 <span class="icons">
