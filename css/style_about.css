@@ -1,2 +1,23 @@
 /* About page css */
 
+.main-body{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-body h1{
+    font-size: 50px;
+}
+.main-body p{
+    font-size: 25px;
+    text-align: center;
+}
+/* footer css for about page */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
