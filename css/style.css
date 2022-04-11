@@ -15,12 +15,16 @@ body {
     background-color: #f7f7f2;
     /* background-image: linear-gradient(to bottom right, rgb(212, 161, 212) , rgb(77, 0, 128)); */
 }
+
+/*********************************** Header css ******************************/
 header {
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
+    background-color: #212121;
 }
+
 .navbar {
     background-color: #212121;
     display: flex;
@@ -51,6 +55,7 @@ header {
     padding: 10px;
     border-radius: 4px;
     text-decoration: none;
+    margin-right: 2px;
     -webkit-transition: background-color .2s ease;
     transition: background-color .2s ease;
 
@@ -60,6 +65,12 @@ header {
 .dropbtn:hover {
     color: #000;
     background-color: #fff;
+}
+
+#activePage a {
+    color: #000;
+    background-color: #fff;
+
 }
 
 /*********************** DropDown */
@@ -104,19 +115,23 @@ header {
 .show {
     display: block;
 }
-/* Progress bar css */
+
+/*********************************** Progress bar css */
 .progress-container {
     width: 100%;
     height: 4px;
     background: #ccc;
-  }
-  
-  .progress-bar {
-    height: 8px;
+}
+
+.progress-bar {
+    height: 4px;
     background: rgb(255, 0, 0);
     width: 0%;
-  }
-  
+}
+
+.hamburger {
+    display: none;
+}
 
 /*------------------------------------------ Footer Css -------------------------------------*/
 
@@ -130,6 +145,7 @@ header {
 .darkModeDiv {
     display: flex;
 }
+
 /* Dar Mode Switch css */
 .switch {
     position: relative;
@@ -197,6 +213,7 @@ input:checked+.sliderRound:before {
     margin: 10px 0px;
     display: inline-block;
 }
+
 /* Dark Mode css END */
 .iconsToFollow {
     display: flex;
@@ -236,24 +253,91 @@ input:checked+.sliderRound:before {
 }
 
 /* Footer part 3 css */
-.footerPart3{
+.footerPart3 {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #212121;
     color: white;
-    
+
 }
-.box1{
-    margin: 1px 3vw ;
+
+.box1 {
+    margin: 1px 3vw;
 }
-.box1 h3{
+
+.box1 h3 {
     margin-bottom: 6px;
 }
-.box1 ul{
+
+.box1 ul {
     padding: 0;
 }
-.box1 ul li{
+
+.box1 ul li {
     list-style-type: none;
 }
 
+/*------------------------------ Responsive Css ------------------------------------ */
+
+@media only screen and (max-width:705px) {
+    .logo {
+        font-size: 33px;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        filter: invert();
+        width: 33px;
+        top: 10px;
+        right: 30px;
+        position: absolute;
+    }
+
+    #img1 {
+        display: block;
+    }
+
+    #img2 {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .list li {
+        padding: 12px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    footer {
+        font-size: 84%;
+    }
+}
+@media only screen and (max-width:470px) {
+    .logo{
+        font-size: 28px;
+    }
+    .hamburger{
+        width: 28px;
+    }
+}
+@media only screen and (max-width:380px) {
+    footer {
+        font-size: 82%;
+    }
+}
