@@ -1,7 +1,7 @@
 /* About page css */
 
 .main-body{
-    padding: 80px;
+    padding: 80px 20px 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
     font-size: 50px;
 }
 .main-body p{
-    font-size: 25px;
+    font-size: 150%;
     text-align: center;
 }
 /* footer css for about page */
@@ -20,4 +20,35 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+/* Resoponsive css */
+@media only screen and (max-width: 780px) {
+    .main-body h1{
+        font-size: 230%;
+    }
+    .main-body p{
+        font-size: 128%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .main-body h1{
+        font-size: 200%;
+    }
+    .main-body p{
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    footer{
+        position: static;
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .main-body h1{
+        font-size: 190%;
+    }
+    .main-body p{
+        font-size: 90%;
+    }
 }
