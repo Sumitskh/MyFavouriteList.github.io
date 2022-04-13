@@ -12,28 +12,32 @@
 <body>
     <!-- Header -->
     <header>
-            <nav class="navbar">
-                <h2 class="logo">MFL</h2>
-                <ul class="list">
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle"
-                                    class="fas fa-angle-down"></i></button>
-                            <div class="dropdown-content" id="myDropdown">
-                                <a href="songs..html">Songs</a>
-                                <a href="anime.html">Anime</a>
-                                <a href="games.html">Games</a>
-                            </div>
+        <nav class="navbar">
+            <h2 class="logo">MFL</h2>
+            <ul class="list" id="list" >
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle"
+                                class="fas fa-angle-down"></i></button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="songs..html">Songs</a>
+                            <a href="anime.html">Anime</a>
+                            <a href="games.html">Games</a>
                         </div>
-                    </li>
-                    <li id="activePage"><a href="about.html">About</a></li>
-                    <li><a href="#">Signin/Signup</a></li>
-                </ul>
-            </nav>
-            <div class="progress-container">
-                <div class="progress-bar" id="myBar"></div>
+                    </div>
+                </li>
+                <li id="activePage"><a href="about.html">About</a></li>
+                <li><a href="#">Signin/Signup</a></li>
+            </ul>
+            <div class="hamburger" onclick="myburger()">
+                <img id="img1" src="images/bars-solid.svg" alt="bars-solid" >
+                <img id="img2" src="images/times-solid.svg" alt="times-solid" >
             </div>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
     </header>
     <div class="main-body">
         <h1>About</h1>
@@ -65,7 +69,7 @@
         </div>
         <div class="footerPart2">
             <div class="copyRight">
-                <p>All Rights Reserved &#169; K95 2022 | v0.05</p>
+                <p>All Rights Reserved &#169; K95 2022 | v0.12</p>
             </div>
         </div>
     </footer>
