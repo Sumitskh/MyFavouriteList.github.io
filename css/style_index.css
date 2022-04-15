@@ -132,6 +132,9 @@
 #radio3:checked~.first {
     margin-left: -40%;
 }
+#radio4:checked~.first {
+    margin-left: -60%;
+}
 
 /* css for automatic navigtion */
 
@@ -164,6 +167,9 @@
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+#radio4:checked~.navigation-auto .auto-btn4 {
     background-color: #fff;
 }
 
