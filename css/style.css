@@ -12,7 +12,8 @@ font-family: 'Red Hat Mono', monospace; */
 }
 
 body {
-    background-color: #f7f7f2;
+    background-color: #ffffe6;
+    /* background-color: #ffffcc; */
     /* background-image: linear-gradient(to bottom right, rgb(212, 161, 212) , rgb(77, 0, 128)); */
 }
 
@@ -27,6 +28,7 @@ header {
 
 .navbar {
     background-color: #212121;
+    /* background-color: #ff4d4d; */
     display: flex;
     justify-content: space-between;
     height: fit-content;
@@ -215,6 +217,24 @@ input:checked+.sliderRound:before {
 }
 
 /* Dark Mode css END */
+.fpart1a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************************** Live clock css start */
+#liveclock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    color: white;
+    margin-left: 10px;
+}
+
+/************************** Live clock css end */
+
 .iconsToFollow {
     display: flex;
     justify-content: center;
@@ -328,16 +348,28 @@ input:checked+.sliderRound:before {
         font-size: 84%;
     }
 }
+
 @media only screen and (max-width:470px) {
-    .logo{
+    .logo {
         font-size: 28px;
     }
-    .hamburger{
+
+    .hamburger {
         width: 28px;
     }
 }
+
 @media only screen and (max-width:380px) {
     footer {
-        font-size: 82%;
+        font-size: 100%;
+    }
+    .footerPart1{
+        margin-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+    .fpart1a{
+        padding-bottom: 5px;
+        justify-content: space-around;
     }
 }
