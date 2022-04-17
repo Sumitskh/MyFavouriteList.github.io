@@ -4,7 +4,8 @@
     padding: 9% 0 0 0;
 }
 
-.cont1 {
+.cont1,
+.cont2 {
     margin: 40px 15px;
 }
 
@@ -132,6 +133,7 @@
 #radio3:checked~.first {
     margin-left: -40%;
 }
+
 #radio4:checked~.first {
     margin-left: -60%;
 }
@@ -169,11 +171,81 @@
 #radio3:checked~.navigation-auto .auto-btn3 {
     background-color: #fff;
 }
+
 #radio4:checked~.navigation-auto .auto-btn4 {
     background-color: #fff;
 }
 
-/********************** Responsive ------------------------- */
+/*---------------------------------- CONTAINTER 2 */
+
+.sub-container {
+    border: 3px solid;
+    margin: 5px 0;
+    /* background-color: #a64dff; */
+}
+
+.sub-container h2 {
+    font-size: 45px;
+    margin: 10px 40px;
+    font-family: cursive;
+}
+
+.sub-container ul {
+    margin: 12px 40px;
+    font-size: 20px;
+    font-family: 'BIZ UDMincho', serif;
+}
+
+.sub-container ul li {
+    padding: 5px 0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .sub-container ul li:hover{
+    text-decoration: underline;
+} */
+.btnForSubCat {
+    font-size: 20px;
+    line-height: 38px;
+    border-radius: 10px;
+    padding: 2px 8px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #339DFF;
+    font-family: 'BIZ UDMincho', serif;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btnForSubCat:hover {
+    background: #fff;
+    color: #339DFF;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+}
+
+.sub-container ul li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.sub-container ul li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/************************************** Responsive ----------------------------------------------- */
 
 /* @media only screen and (max-width: 1024px) {
     .slide img {
@@ -377,11 +449,25 @@
     .mainBody {
         padding-top: 16%;
     }
+    .sub-container h2{
+        font-size: 40px;
+    }
+    .sub-container ul{
+        font-size: 15px;
+    }
+    .btnForSubCat{
+        font-size: 15px;
+        line-height: 32px;
+    }
 }
 
 @media only screen and (max-width:430px) {
     .mainBody {
         padding-top: 17%;
+    }
+    .btnForSubCat{
+        font-size: 14px;
+        line-height: 28px;
     }
 }
 
@@ -400,6 +486,13 @@
 
     .mainBody {
         padding-top: 18%;
+    }
+    .sub-container h2{
+        font-size: 35px;
+        margin: 8px 40px;
+    }
+    .sub-container ul{
+        margin: 10px 40px;
     }
 }
 
@@ -444,5 +537,12 @@
 
     .linkBtn p {
         font-size: 7.5px;
+    }
+    .sub-container h2{
+        font-size: 35px;
+        margin: 8px 30px;
+    }
+    .sub-container ul{
+        margin: 10px 30px;
     }
 }
