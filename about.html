@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_about.css">
 </head>
+
 <body>
     <!-- Header -->
-    <header>
+    <header id="header">
         <nav class="navbar">
             <h2 class="logo">MFL</h2>
-            <ul class="list" id="list" >
+            <ul class="list" id="list">
                 <li><a href="index.html">Home</a></li>
                 <li>
                     <div class="dropdown">
@@ -31,8 +33,8 @@
                 <li><a href="#">Signin/Signup</a></li>
             </ul>
             <div class="hamburger" onclick="myburger()">
-                <img id="img1" src="images/bars-solid.svg" alt="bars-solid" >
-                <img id="img2" src="images/times-solid.svg" alt="times-solid" >
+                <img id="img1" src="images/bars-solid.svg" alt="bars-solid">
+                <img id="img2" src="images/times-solid.svg" alt="times-solid">
             </div>
         </nav>
         <div class="progress-container">
@@ -41,17 +43,33 @@
     </header>
     <div class="main-body">
         <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A explicabo omnis, odit consequatur, voluptatum laboriosam, amet dolore adipisci nam libero sequi inventore. Iste voluptatem tempore sapiente ab a doloremque vero nulla eius impedit in! Praesentium accusamus amet, magnam corporis quod iste minima magni ex itaque cumque repellendus commodi velit soluta suscipit facere illum molestiae, possimus deserunt ducimus voluptates in. Cumque in numquam cum aut, pariatur fugiat facere illum sapiente molestiae aliquam, ipsa officia necessitatibus nihil aperiam temporibus voluptates est enim voluptatum corrupti. Cum ratione accusantium architecto quasi maiores! Quae earum, necessitatibus quasi repellendus quis eligendi? Repudiandae autem ullam iste dolores quidem vel fugiat ipsa, veniam possimus consequatur maiores odio, quam temporibus esse accusamus et numquam qui ducimus, sed perferendis magnam assumenda provident architecto ratione? Aut fugiat qui ducimus nobis eligendi! Maxime esse voluptatem vel doloremque labore mollitia tempore aliquam nulla quod commodi earum aliquid nesciunt, molestiae laborum tenetur iste enim, optio similique placeat! Neque labore reprehenderit deserunt omnis consequatur, rem exercitationem temporibus quasi officiis non saepe voluptatibus illo quis doloribus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A explicabo omnis, odit consequatur, voluptatum
+            laboriosam, amet dolore adipisci nam libero sequi inventore. Iste voluptatem tempore sapiente ab a
+            doloremque vero nulla eius impedit in! Praesentium accusamus amet, magnam corporis quod iste minima magni ex
+            itaque cumque repellendus commodi velit soluta suscipit facere illum molestiae, possimus deserunt ducimus
+            voluptates in. Cumque in numquam cum aut, pariatur fugiat facere illum sapiente molestiae aliquam, ipsa
+            officia necessitatibus nihil aperiam temporibus voluptates est enim voluptatum corrupti. Cum ratione
+            accusantium architecto quasi maiores! Quae earum, necessitatibus quasi repellendus quis eligendi?
+            Repudiandae autem ullam iste dolores quidem vel fugiat ipsa, veniam possimus consequatur maiores odio, quam
+            temporibus esse accusamus et numquam qui ducimus, sed perferendis magnam assumenda provident architecto
+            ratione? Aut fugiat qui ducimus nobis eligendi! Maxime esse voluptatem vel doloremque labore mollitia
+            tempore aliquam nulla quod commodi earum aliquid nesciunt, molestiae laborum tenetur iste enim, optio
+            similique placeat! Neque labore reprehenderit deserunt omnis consequatur, rem exercitationem temporibus
+            quasi officiis non saepe voluptatibus illo quis doloribus?</p>
     </div>
     <!-- footer -->
-    <footer>
+    <footer id="footer">
         <div class="footerPart1">
-            <div class="darkModeDiv">
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="sliderRound" onclick="darkMode()"></span>
-                </label>
-                <span id="darkModeText">Dark Mode</span>
+            <div class="fpart1a">
+                <div class="darkModeDiv">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="sliderRound" onclick="darkMode()"></span>
+                    </label>
+                    <span id="darkModeText">Dark Mode</span>
+                </div>
+                <div id="liveclock">
+                </div>
             </div>
             <div class="iconsToFollow">
                 <span id="followText">Follow us on : </span>
@@ -75,4 +93,5 @@
     </footer>
     <script src="script/script.js"></script>
 </body>
+
 </html>

@@ -11,7 +11,7 @@
 </head>
 
 <body class="dark-mode">
-    <header>
+    <header id="header" class="dark-mode">
         <nav class="navbar">
             <h2 class="logo">MFL</h2>
             <ul class="list" id="list">
@@ -20,8 +20,8 @@
                     <div class="dropdown">
                         <button class="dropbtn" onclick="dropDown()">Categories <i id="catDrpAngle"
                                 class="fas fa-angle-down"></i></button>
-                        <div class="dropdown-content" id="myDropdown">
-                            <a href="songs..html">Songs</a>
+                        <div class="dropdown-content dark-mode" id="myDropdown">
+                            <a href="music.html">Music</a>
                             <a href="movies.html">Movies</a>
                             <a href="games.html">Games</a>
                         </div>
@@ -36,7 +36,7 @@
             </div>
         </nav>
         <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
+            <div class="progress-bar dark-mode-pb" id="myBar"></div>
         </div>
     </header>
     <!-- End of header / Starting of main Body -->
@@ -93,12 +93,12 @@
         </div>
         <div class="cont1">
             <div class="heading">
-                <h1>CHOICES</h1>
+                <h1>Fav. CHOICES</h1>
             </div>
             <div class="catList">
-                <a href="songs..html">
+                <a href="music.html">
                     <div class="linkBtn">
-                        <h3>Songs</h3>
+                        <h3>Music</h3>
                         <p>Music is here...</p>
                     </div>
                 </a>
@@ -116,9 +116,41 @@
                 </a>
             </div>
         </div>
+        <div class="cont2">
+            <div class="heading">
+                <h1>Sub Choices</h1>
+            </div>
+            <div class="sub-container">
+                <h2>Music</h2>
+                <hr>
+                <ul>
+                    <li>Hindi Songs <a href="#" class="btnForSubCat">Check Out</a></li>
+                    <li>English Songs <a href="#" class="btnForSubCat">Check Out</a></li>
+                    <li>Soundtracks <a href="#" class="btnForSubCat">Check Out</a></li>
+                    <li>Nightcore <a href="#" class="btnForSubCat">Check Out</a></li>
+                </ul>
+            </div>
+            <div class="sub-container">
+                <h2>Movies</h2>
+                <hr>
+                <ul>
+                    <li>Bollywood Movies <a href="#" class="btnForSubCat">Check Out</a></li>
+                    <li>Hollywood Movies <a href="#" class="btnForSubCat">Check Out</a></li>
+                    <li>Tollywood Movies <a href="#" class="btnForSubCat">Check Out</a></li>
+                </ul>
+            </div>
+            <div class="sub-container">
+                <h2>Games</h2>
+                <hr>
+                <ul>
+                    <li>PC Games <a href="#" class="btnForSubCat">Check Out</a></li>
+                    <li>Android Games <a href="#" class="btnForSubCat">Check Out</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- End of main Body / Starting of Footer -->
-    <footer>
+    <footer id="footer" class="dark-mode">
         <div class="footerPart1">
             <div class="fpart1a">
                 <!-- dark Mode start -->
@@ -150,7 +182,7 @@
         </div>
         <div class="footerPart2">
             <div class="copyRight">
-                <p>All Rights Reserved &#169; K95 2022 | v0.12</p>
+                <p>All Rights Reserved &#169; K95 2022 | v0.15</p>
             </div>
         </div>
     </footer>

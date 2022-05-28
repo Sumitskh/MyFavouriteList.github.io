@@ -4,8 +4,16 @@ console.log("Hello World");
 function darkMode() {
   let body = document.body;
   let content1 = document.getElementsByClassName("cont1");
+  let header = document.querySelector("#header");
+  let footer = document.querySelector("#footer");
+  let drpDown = document.querySelector("#myDropdown");
+  let pb = document.querySelector("#myBar");
   // console.log("clicked");
   body.classList.toggle("dark-mode");
+  header.classList.toggle("dark-mode");
+  footer.classList.toggle("dark-mode");
+  drpDown.classList.toggle("dark-mode");
+  pb.classList.toggle("dark-mode-pb");
   // content1.classList.toggle("dark-mode");
 }
 //  dark mode & Local storage
