@@ -13,6 +13,7 @@ font-family: 'Red Hat Mono', monospace; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -262,6 +263,7 @@ input:checked+.sliderRound:before {
 .icons {
     color: white;
     margin-right: 6px;
+    cursor: pointer;
 }
 
 .icons .fab {
