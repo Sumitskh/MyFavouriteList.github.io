@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/4e860c3dd1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body class="dark-mode">
@@ -28,7 +30,7 @@
                     </div>
                 </li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Signin/Signup</a></li>
+                <li><a href="#" onclick="document.getElementById('loginModal').style.display = 'block' ">Signin/Signup</a></li>
             </ul>
             <div class="hamburger" onclick="myburger()">
                 <img id="img1" src="images/bars-solid.svg" alt="bars-solid">
@@ -37,6 +39,28 @@
         </nav>
         <div class="progress-container">
             <div class="progress-bar dark-mode-pb" id="myBar"></div>
+        </div>
+        <div id="loginModal" class="login_modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgContainerModal">
+                    <span class="closeModal" onclick="document.getElementById('loginModal').style.display = 'none' " title='Close'>&times;</span>
+                    <img src="images/img_avatar2.png" alt="avatar" class="avatar">
+                </div>
+                <div class="containerModal">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter username" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="text" placeholder="Enter password" name="psw" required>
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                <div class="containerModal" style="background-color: #f1f1f1;">
+                    <button class="cancelLogin" type="button" onclick="document.getElementById('loginModal').style.display = 'none' ">Cancel</button>
+                    <span class="psw"><a href="#">Forgot password?</a></span>
+                </div>
+            </form>
         </div>
     </header>
     <!-- End of header / Starting of main Body -->
@@ -120,13 +144,16 @@
             <div class="heading">
                 <h1>Sub Choices</h1>
             </div>
-            <div  id="musicSection" class="sub-container">
+            <div id="musicSection" class="sub-container">
                 <h2>Music</h2>
                 <hr>
                 <ul>
-                    <li>Pagalworld <a href="https://www.pagalworld.pw/" class="btnForSubCat" target="_blank">Check Out</a></li>
-                    <li>Mr. Jatt <a href="https://www.mr-jatt.im/" class="btnForSubCat" target="_blank">Check Out</a></li>
-                    <li>Djjohal <a href="https://www.djjohal.com/" class="btnForSubCat" target="_blank">Check Out</a></li>
+                    <li>Pagalworld <a href="https://www.pagalworld.pw/" class="btnForSubCat" target="_blank">Check
+                            Out</a></li>
+                    <li>Mr. Jatt <a href="https://www.mr-jatt.im/" class="btnForSubCat" target="_blank">Check Out</a>
+                    </li>
+                    <li>Djjohal <a href="https://www.djjohal.com/" class="btnForSubCat" target="_blank">Check Out</a>
+                    </li>
                     <li>MFL Music <a href="music.html" class="btnForSubCat" target="_blank">Check Out</a></li>
                 </ul>
             </div>
@@ -134,17 +161,24 @@
                 <h2>Movies</h2>
                 <hr>
                 <ul>
-                    <li>Mkv Cinemas <a href="https://www.mkvcinemas.ch" class="btnForSubCat" target="_blank">Check Out</a></li>
-                    <li>Katmovieshd <a href="https://katmoviehd.re/" class="btnForSubCat" target="_blank">Check Out</a></li>
-                    <li>Extra Movies <a href="https://extramovies.tel/" class="btnForSubCat" target="_blank">Check Out</a></li>
+                    <li>Mkv Cinemas <a href="https://www.mkvcinemas.ch" class="btnForSubCat" target="_blank">Check
+                            Out</a></li>
+                    <li>Katmovieshd <a href="https://katmoviehd.re/" class="btnForSubCat" target="_blank">Check Out</a>
+                    </li>
+                    <li>Extra Movies <a href="https://extramovies.tel/" class="btnForSubCat" target="_blank">Check
+                            Out</a></li>
+                    <li>MFL Movies <a href="movies.html" class="btnForSubCat" target="_blank">Check Out</a></li>
                 </ul>
             </div>
             <div id="gamesSection" class="sub-container">
                 <h2>Games</h2>
                 <hr>
                 <ul>
-                    <li>iPC Games <a href="https://ipcgames.com/" class="btnForSubCat" target="_blank">Check Out</a></li>
-                    <li>Oceans of Games <a href="https://oceansofgamess.com/" class="btnForSubCat" target="_blank">Check Out</a></li>
+                    <li>iPC Games <a href="https://ipcgames.com/" class="btnForSubCat" target="_blank">Check Out</a>
+                    </li>
+                    <li>Oceans of Games <a href="https://oceansofgamess.com/" class="btnForSubCat" target="_blank">Check
+                            Out</a></li>
+                    <li>MFL Games <a href="games.html" class="btnForSubCat" target="_blank">Check Out</a></li>
                 </ul>
             </div>
         </div>
@@ -159,7 +193,7 @@
                         <input type="checkbox">
                         <span class="sliderRound" onclick="darkMode()"></span>
                     </label>
-                    <span id="darkModeText">Light Mode</span>
+                    <span id="darkModeText">Dark Mode</span>
                 </div>
                 <!-- dark Mode End -->
                 <div id="liveclock">
@@ -182,12 +216,13 @@
         </div>
         <div class="footerPart2">
             <div class="copyRight">
-                <p>All Rights Reserved &#169; K95 2022 | v0.20</p>
+                <p>All Rights Reserved &#169; K95 2022 | v0.252</p>
             </div>
         </div>
     </footer>
     <script src="script/script.js"></script>
     <script src="script/script_index.js"></script>
+    <script src="script/script_login.js"></script>
 </body>
 
 </html>
